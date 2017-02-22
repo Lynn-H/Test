@@ -1,0 +1,16 @@
+applications:
+- services:
+  - "Secure Gateway-tv"
+name: try_meteor.lynn
+host: try_meteor.lynn
+disk: 1024M
+name: try_meteor.lynn
+buildpack: https://github.com/AdmitHub/meteor-buildpack-horse.git
+path: .
+timeout: 180
+no-route: true
+mem: 512M
+instances: 1
+env:
+  MONGO_URL: "mongodb://caplonsgprd-3.integration.ibmcloud.com:15295/test"
+  ROOT_URL:  "http://localhost"

@@ -1,16 +1,8 @@
 applications:
-- services:
-  - jenkins-mongoDB
-name: jenkins.test
-host: jenkins.test
-disk: 1024M
-name: jenkins.test
-buildpack: https://github.com/AdmitHub/meteor-buildpack-horse.git
-path: .
-timeout: 180
-no-route: true
-mem: 256M
-instances: 1
-env:
-  MONGO_URL: "mongodb://xaplonsgprd-3.integration.ibmcloud.com:15295/test"
-  ROOT_URL:  "http://localhost"
+- name: jenkinsTest
+  host: jenkinsTest
+  instances: 1
+  memory: 256M
+  disk_quota: 1024M
+  services:
+    - jenkins-mongoDB

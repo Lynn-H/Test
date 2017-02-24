@@ -1,5 +1,5 @@
 applications:
-- name: jenkinsTest
+- name: Lynn000Test
   instances: 1
   memory: 256M
   disk_quota: 1024M

@@ -6,5 +6,6 @@ applications:
   buildpack: https://github.com/AdmitHub/meteor-buildpack-horse.git
   services:
     - jenkins-mongoDB
-  MONGO_URL: "mongodb://caplonsgprd-3.integration.ibmcloud.com:15295/test"
-  ROOT_URL:  "http://localhost"
+  env:
+    MONGO_URL: "mongodb://xxplonsgprd-3.integration.ibmcloud.com:15295/test"
+    ROOT_URL:  "http://localhost"

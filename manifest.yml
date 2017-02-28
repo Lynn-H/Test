@@ -7,3 +7,6 @@ applications:
   timeout: 240
   services:
     - jenkins-mongoDB
+  env:
+    MONGO_URL: "mongodb://xxplonsgprd-3.integration.ibmcloud.com:15295/test"
+    ROOT_URL:  "http://localhost"
